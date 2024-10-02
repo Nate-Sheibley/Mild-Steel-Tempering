@@ -1,0 +1,29 @@
+steel,density,units_density,poissons_ratio,elastic_modulus,units_em
+AISI 1074 Carbon Steel,7.7-8.03,g/cm3,0.27-0.30,7.85,g/cm3
+AISI-SAE 4340,7.85,g/cm3,0.27-0.30,7.85,g/cm3
+AISI 1090,7.85,g/cm3,0.27-0.30,7.85,g/cm3
+AISI 1049,7.7-8.03,g/cm3,0.27-0.30,7.85,g/cm3
+AISI-SAE 1065,7.85,g/cm3,0.27-0.30,7.85,g/cm3
+AISI 4640,7.75,g/cm3,0.27-030,7.85,g/cm3
+AISI 6145,7.75,g/cm3,0.27-030,7.85,g/cm3
+AISI-SAE 1026,7.858,g/,0.27-0.30,7.85,g/cm3
+AISI-SAE 1050,7.85,g/cm3,0.27-0.30,7.85,g/cm3
+AISI-SAE 4140,7.85,g/cm3,0.27-0.30,7.85,g/cm3
+AISI-SAE 1045,7.87,g/cm3,0.29,7.85,g/cm3
+AISI-SAE 1040,7.845,g/cc,0.27-0.30,7.85,g/cm3
+AISI 1030,7.85,g/cc,0.27-0.30,7.85,g/cm3
+AISI-SAE 1335,7.87,g/cm3,0.27-0.30,7.85,g/cm3
+AISI 1095,7.85,g/cm3,0.27-0.30,7.85,g/cm3
+AISI-SAE 1038,7.845,g/cm3,0.27-0.30,7.85,g/cm3
+AISI-SAE 5160,7.85,g/cm3,0.27 – 0.30,7.85,g/cm3
+AISI 1055,7.85,g/cm3,0.27-0.30,7.85,g/cm3
+AISI 52100,7.81,g/cm3,0.27-0.30,7.85,g/cm3
+AISI-SAE 1080,7.7-8.03,g/cm3,0.27-0.30,7.85,g/cm3
+AISI-SAE 5140,7.85,g/cm3,0.27-0.30,7.85,g/cm3
+AISI-SAE 1035,7.85,g/cm3,0.27-0.30,7.85,g/cm3
+AISI-SAE 1042,7.844,g/cm3,0.27-0.30,7.85,g/cm3
+AISI-SAE 4037,7.85,g/cm3,0.27-0.30,7.85,g/cm3
+AISI 4047,7.85,g/cm3,0.27-0.30,7.85,g/cm3
+AISI-SAE 1030,7.85,g/cc,0.27-0.30,7.85,g/cm3
+AISI-SAE 6150,7.85,g/cm3,0.27 – 0.30,7.85,g/cm3
+AISI-SAE 4027,7.85,g/cm3,0.27-0.30,7.85,g/cm3
