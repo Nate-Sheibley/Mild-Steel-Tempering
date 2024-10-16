@@ -1,14 +1,12 @@
 # Mild-Steel-Tempering
 ---
-UC Berkeley-Ext Data Analytics Boot Camp Project 4 - Solo
 
-[Proposal](references/Nathan_project4_proposal.docx)
 
 Description
 ---
 This project aims to enhance the understanding of mild steel tempering through predictive modeling, ultimately aiding in the optimization of heat treatment processes in engineering applications. This will reduce the need for manual consultation of large tempering tables, and will allow for improved engineering workflow.
 
-I do not succeed in providing such an engineering tool, this dataset is too limited. I do provide a set of next steps, both in how to build such an application form the available data, and what data may be collected to improve such a direct prefiction model. Sadly, both extensions of the project are outside the scope of the proposal and deadline.
+I do not succeed in providing such an engineering tool, this dataset is too limited,a nd the mutli-output, mutli-label models result in severe overfitting. However, this data is sufficent to provide a final hardness prediction from a given steel and tempering proceedure. I provide a set of next steps, both in how to build such an tempering process predition application from the available data, and what data may be collected to improve such a direct prefiction model. Sadly, both extensions of the project are outside the scope of the proposal.
 
 Context
 ---
@@ -43,3 +41,10 @@ For classification models the metrics accuracy and loss were used.
 For regression models the metrics Mean Squared Error and loss were used.
 
 
+Author
+--- 
+Nathan Sheibley
+
+[Proposal](references/Nathan_project4_proposal.docx)
+
+UC Berkeley-Ext Data Analytics Boot Camp Final Project - Solo
