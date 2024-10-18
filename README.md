@@ -41,6 +41,7 @@ For regression models the metrics Mean Squared Error and loss were used.
 
 Sources
 ---
+## Data
 [Raiipa Technologies Kaggle dataset](https://www.kaggle.com/datasets/rgerschtzsauer/tempering-data-for-carbon-and-low-alloy-steels)
 
 [The Effects of Alloying Elements on Steels](https://www.semanticscholar.org/paper/Christian-Doppler-Laboratory-for-Early-Stages-of-of-Maalekian/8b2503ef6e92e0452156547acb3f59e6c53e266c)
@@ -50,15 +51,18 @@ Bringas, J. E. (2002). Handbook of Comparative World Steel Standards. ASTM Inter
  * [AZO Materials](https://www.azom.com/)
  * [MakeItFrom](https://www.makeitfrom.com/)
 
-Author
---- 
-Nathan Sheibley
-
+## Generated Documents
 * [Proposal](references/Nathan_project4_proposal.docx)
+
+* [Main Notebook](Mild_Steel_Tempering-main.ipynb)
 
 * [Presentation](references/Mild-Steel-Tempering-Presentation.pptx)
 
 * [Presentation Script](references/pres_outline_and_script.md)
 
+
+Author
+--- 
+Nathan Sheibley
 
 UC Berkeley-Ext Data Analytics Boot Camp Final Project - Solo
