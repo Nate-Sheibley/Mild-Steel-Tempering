@@ -54,8 +54,11 @@ Author
 --- 
 Nathan Sheibley
 
-[Proposal](references/Nathan_project4_proposal.docx)
-[Presentation](references/Mild-Steel-Tempering-Presentation.pptx)
-[Presentation Script](references/pres_outline_and_script.md)
+* [Proposal](references/Nathan_project4_proposal.docx)
+
+* [Presentation](references/Mild-Steel-Tempering-Presentation.pptx)
+
+* [Presentation Script](references/pres_outline_and_script.md)
+
 
 UC Berkeley-Ext Data Analytics Boot Camp Final Project - Solo
