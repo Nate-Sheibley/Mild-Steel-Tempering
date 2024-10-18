@@ -1,34 +1,5 @@
-# Presentation Reqs
-## Clear Objective and Purpose
-1. Goal-Oriented: Start with a clear understanding of the purpose of your presentation. What are you trying to convey? Is it to inform, persuade, or explore
-data? Define your key message or insight.
-2. Target Audience: Tailor your visualizations and explanations to the knowledge level and interests of your audience. Consider what they need to know and
-how best to communicate that information to them.
-## Relevant and Accurate Data
-1. Relevant Data: for example, if your story is about hourly changes in rainfall, your visualization data shouldn’t be in months.
-2. Contextualization: if warranted, provide context for the data. Explain where it comes from, the time period it covers, and any assumptions or limitations.
-## Effective Visual Design
-1. Choosing the Right Chart Type: Use appropriate visualizations (bar charts, line graphs, scatter plots, etc.) that best represent the data and the insights you
-want to convey.
-2. Simplicity: Avoid clutter and unnecessary details. Strive for simplicity in design while ensuring all necessary information is included.
-3. Consistency: Maintain consistent use of colors, fonts, and design elements throughout the presentation to avoid confusion and enhance readability.
-4. Accessibility [OPTIONAL]: Ensure that the design is accessible to all viewers, including those with color blindness or other visual impairments. Use color
-palettes that are colorblind-friendly and provide sufficient contrast.
+# Script (8-10 minutes)
 
-Slide|Story Beat|Content
----|---|---
-1|introduce the subject| Hook, we've all bent metal til it breaks. manufacturing
-2|describe the base problem and solution (work and temper)| https://d2ykdomew87jzd.cloudfront.net/Blog/Ulbrich-Manufacturing-Process-Illustration-1200x628.jpg
-3|introduce the data and modelling goal| data summary table. ref Raiipa, AZoM, MIF 
-4|data processing, PCA | obviously there were a few fields like source that were unnecessary for my consideration. correlation plots
-5|structure of multioutput problem| label balancing, pre/post. accuracy... didn't work. two headed model diagram.
-6|return to a simpler regression problem| introduce the regression problem, and the prediction. scatter/ling plot. table of R2 for NN and GBR
-7| compare NN model results across the two problems | plot 2 headed loss on left, single regression on right.
-8|Downsides of the data processing|talk about GBR explainability and PCA. Feature importance plot. inability to correlate with features irl.know from domain knowlegde alloy elements significantly change steel microstructure behavior at temperature. show Mo plot from paper. https://www.semanticscholar.org/paper/Christian-Doppler-Laboratory-for-Early-Stages-of-of-Maalekian/8b2503ef6e92e0452156547acb3f59e6c53e266c
-9|Thank you!
-
-
-## Script (8-10 minutes)
 1. I'm going to be talking the tempering of steel today. I'm sure we've all bent a piece of metal back and forth until it breaks. Working a metal by bending it, compressing it, or streching it all cause stresses to accumulate in the metal. These stresses result in work hardening. Contiuned work hardening makes the metal brittle and results in cracking, which is obviously undesirable, and what you have seen bending a piece of metal back and forth until it breaks. (30s)
 
 2. So, let's say we're a manufacturer, and we have a roll of steel that is raw stock and nominally 1/4 inch thick. But, as a manufacturer, we must work it to thin it to 1/4" or 1/8th" to match sales specification. This will work harden it thoroughly, making it stiff, brittle, and difficult to cut or trim to final size. Annealing a steel by heating it to a few hundred, or even several hundred degrees Celcius, will reverse the work hardeneing, softening the metal again so that more work can be done easily and without permenant damage like cracking. Tempering, which I will be modeeling, is an almost identical process, but where annealing aims to make the steel as soft as possible, for continued working, tempering is done with a final target hardness mind. This final hardness is important because it's can be tested non-destructively and indicates other properties like toughness and strength. (1:20)
@@ -50,3 +21,33 @@ Slide|Story Beat|Content
 10. In terms of next steps to be taken, I would like to develop an explainable model. Using PCA as I did confounds the ability to pull explainations from the regression model. I do not know what dataset features correspons to the 7 dominant PCA features in this plot of feature importance. It could be that PCA is cluing into the atomic size of the alloying elements and that is a dominant feature in this behavior, but I can not learn that from this model. Figuring out how to implement some inverse_transformations, or skipping the PCA altogether and handling the mutlicollinearity another way would be important in gaining insights from this model. I know certain alloying elements have a much larger impact on hardness and tempering behaviors, so perhaps using using external domain knowledge and validation testing, someone more knowledgable than I may be able to assign signficance to the PCA model features. I think this could be an interesting line of future inquery, but is outside the scope of this project.(9:00)
 
 11. Thank you for your time, I hope this was interesting! Elias, do we have time for questions? (9:10)
+
+# Presentation Reqs
+## Clear Objective and Purpose
+1. Goal-Oriented: Start with a clear understanding of the purpose of your presentation. What are you trying to convey? Is it to inform, persuade, or explore
+data? Define your key message or insight.
+2. Target Audience: Tailor your visualizations and explanations to the knowledge level and interests of your audience. Consider what they need to know and
+how best to communicate that information to them.
+## Relevant and Accurate Data
+1. Relevant Data: for example, if your story is about hourly changes in rainfall, your visualization data shouldn’t be in months.
+2. Contextualization: if warranted, provide context for the data. Explain where it comes from, the time period it covers, and any assumptions or limitations.
+## Effective Visual Design
+1. Choosing the Right Chart Type: Use appropriate visualizations (bar charts, line graphs, scatter plots, etc.) that best represent the data and the insights you
+want to convey.
+2. Simplicity: Avoid clutter and unnecessary details. Strive for simplicity in design while ensuring all necessary information is included.
+3. Consistency: Maintain consistent use of colors, fonts, and design elements throughout the presentation to avoid confusion and enhance readability.
+4. Accessibility [OPTIONAL]: Ensure that the design is accessible to all viewers, including those with color blindness or other visual impairments. Use color
+palettes that are colorblind-friendly and provide sufficient contrast.
+
+## Slides Outline
+Slide|Story Beat|Content
+---|---|---
+1|introduce the subject| Hook, we've all bent metal til it breaks. manufacturing
+2|describe the base problem and solution (work and temper)| https://d2ykdomew87jzd.cloudfront.net/Blog/Ulbrich-Manufacturing-Process-Illustration-1200x628.jpg
+3|introduce the data and modelling goal| data summary table. ref Raiipa, AZoM, MIF 
+4|data processing, PCA | obviously there were a few fields like source that were unnecessary for my consideration. correlation plots
+5|structure of multioutput problem| label balancing, pre/post. accuracy... didn't work. two headed model diagram.
+6|return to a simpler regression problem| introduce the regression problem, and the prediction. scatter/ling plot. table of R2 for NN and GBR
+7| compare NN model results across the two problems | plot 2 headed loss on left, single regression on right.
+8|Downsides of the data processing|talk about GBR explainability and PCA. Feature importance plot. inability to correlate with features irl.know from domain knowlegde alloy elements significantly change steel microstructure behavior at temperature. show Mo plot from paper. https://www.semanticscholar.org/paper/Christian-Doppler-Laboratory-for-Early-Stages-of-of-Maalekian/8b2503ef6e92e0452156547acb3f59e6c53e266c
+9|Thank you!
