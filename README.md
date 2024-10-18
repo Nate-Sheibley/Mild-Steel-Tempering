@@ -14,21 +14,20 @@ Tempering of steel is an important process in engineering. It ensures that the s
 
 Broadly, tempering is one of several heat treatments that can transform a certain grade of steel to be better suited for specific applications. It may also help undo internal stresses accumulated through shaping during manufacturing.
 
-Sources
+Results
 ---
-[Raiipa Technologies Kaggle dataset](https://www.kaggle.com/datasets/rgerschtzsauer/tempering-data-for-carbon-and-low-alloy-steels)
+This project is largely an exploration into data analytics and data science skills learned at the UCB data analytics bootcamp. The inital approach was certainly too ambitious given my knowledge of the dataset, but that is how we learn.
 
-[The Effects of Alloying Elements on Steels](https://www.semanticscholar.org/paper/Christian-Doppler-Laboratory-for-Early-Stages-of-of-Maalekian/8b2503ef6e92e0452156547acb3f59e6c53e266c)
+For the Tempering time and temperatature classification problem, I attempted several simpler, models, and settled on Extra Trees Classifier as a baseline. It severely overfit the data, with 90% training combined accuracy and 25% combined testing accuracy. The neural network classifier performed better with respect to overfitting, but the combined accuracy did not break 40%.
 
-Bringas, J. E. (2002). Handbook of Comparative World Steel Standards. ASTM International.
- ### Scraped data
- * [AZO Materials](https://www.azom.com/)
- * [MakeItFrom](https://www.makeitfrom.com/)
+Moving to a regression models to predict the final hardness as a continuous measure, gradient boosting regression had a R-squared of 0.93. Using a neural network for the same prediction resulted in similar MSE and R2. Plotting the GBR model predicted vs actual showed a linear relationship with some noise, indicating the more complex NN model was uncessessary. 
 
+### Lessons Learned
 
-Approach
----
-This project is largely an exploration into data analytics and data science skills. The inital approach was certainly too ambitious given my knowledge of the dataset, but that is how we.
+Spend more time in exploratory data analysis. The issues that arose in the classification model were evident from the data initially, however I did not have the experiecne and expertise to identify that. This whole project was a huge learning experience, from using polars, a dataframe tool I had never used before, to building a mutli-output model, which I had also never done.
+
+I initially gravitated towards PCA as a tool to reduce multicollinearity, as there was a substantial amount in my data, but found it eliminated the explainability of the model, so am learning additional ways to handle that issue, as I hope to go into chemical applications of machine learning.
+
 
 ### Models used
 * Extra Trees Classifier
@@ -40,6 +39,16 @@ For classification models the metrics accuracy and loss were used.
 
 For regression models the metrics Mean Squared Error and loss were used.
 
+Sources
+---
+[Raiipa Technologies Kaggle dataset](https://www.kaggle.com/datasets/rgerschtzsauer/tempering-data-for-carbon-and-low-alloy-steels)
+
+[The Effects of Alloying Elements on Steels](https://www.semanticscholar.org/paper/Christian-Doppler-Laboratory-for-Early-Stages-of-of-Maalekian/8b2503ef6e92e0452156547acb3f59e6c53e266c)
+
+Bringas, J. E. (2002). Handbook of Comparative World Steel Standards. ASTM International.
+ ### Scraped data
+ * [AZO Materials](https://www.azom.com/)
+ * [MakeItFrom](https://www.makeitfrom.com/)
 
 Author
 --- 
