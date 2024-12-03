@@ -1,5 +1,14 @@
 # Mild Steel Tempering
 ---
+# Overview: -main vs -revised
+
+There are two notebooks in this repository. 
+
+1. The -main.ipynb was turned in for the final project of the UC Berkeley Data Analytics boot camp. I had 3 weeks to find a dataset, submit a business case proposal, then complete a notebook that showed at least 2 models of machine learning, appropriate preprocessing of the data, had > 0.75 accuracy. This notebook has 4 distinct models, and explores many optimization tweaks to these models.
+
+2. The -revised.ipynb notebook is currently in progress (Dec 2, '24). It is a reconstruction of the project based on lessons learned from the -main notebook. The end goal of the -revised notebook is to fully implement a scalable version of the business idea presented in the proposal. That is, build a pipeline, model, and application that can accept steel compositions and a desired final hardness, and output the appropriate tempering conditions.
+
+# Original README '-main.ipynb'
 
 ## Description
 This project aims to enhance the understanding of mild steel tempering through predictive modeling, ultimately aiding in the optimization of heat treatment processes in engineering applications. This will reduce the need for manual consultation of large tempering tables, and will allow for improved engineering workflow.
