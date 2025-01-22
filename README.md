@@ -45,6 +45,8 @@ Numnber of lines of code was cut in half. Excessive data augmentation and proces
 
 Function developed that takes in a trained model and steel input, with desired hardness, and outputs a tempering temperature for a given amount of tempering time to reach a target hardness. The model scores 0.98 which is very good and better than found in the original project.
 
+![Model fit](/images/revised/GBR_fit.png)
+
 TODO: add an API and localhost for the github page (Jan 22, '25)
 
 ---
