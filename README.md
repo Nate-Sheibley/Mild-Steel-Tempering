@@ -17,7 +17,7 @@ There are two notebooks in this repository.
 2. The *-revised.ipynb notebook is currently in progress (Dec 2, '24). It is a reconstruction of the project based on lessons learned from completing the capstone project. The end goal of the revised notebook is to fully implement a scalable version of the business idea presented in the proposal. That is, build a pipeline, model, and application that can accept steel compositions and a desired final hardness, and output the appropriate tempering conditions, in a user friendly manner. 
 
 ## Original Result '-main.ipynb'
-For the Tempering time and temperatature classification problem, I attempted several simpler, models, and settled on Extra Trees Classifier as a baseline. It severely overfit the data, with 90% training combined accuracy and 25% combined testing accuracy. The neural network classifier performed better with respect to overfitting, but the combined accuracy did not break 40%.
+For the Tempering time and temperatature classification problem, I attempted several simpler, models, and settled on Extra Trees Classifier as a baseline. It severely overfit the data, with 90% training combined accuracy and 25% combined testing accuracy. The neural network classifier performed better with respect to overfitting, but the combined accuracy did not break 50%.
 
 ![NN multiclass multioutput model accuracy](/images/multiout/DNN_acc.png)
 
